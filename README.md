@@ -1,4 +1,4 @@
-# MójProjekt
+# Programy U¿ytkowe
 autor: Micha³ Koz³owski
 ## Opis projektu:
-Program robi to i to, wykonuje ró¿ne rzeczy.
+Baza dla æwiczeñ z przedmiotu Programy U¿ytkowe. Informatyka IO 2017
