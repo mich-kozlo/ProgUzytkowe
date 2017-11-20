@@ -1,0 +1,111 @@
+﻿\documentclass[a4paper,12pt]{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{algpseudocode}
+
+%opening
+\title{Matematyka w LaTeX'u}
+\author{Michał Kozłowski}
+
+\begin{document}
+
+\maketitle
+
+\section{Ćwiczenia}
+
+\TeX wymawiamy jako $\tau\epsilon\chi$.\\
+100m$^3$ wody
+
+Ułamek:\\
+Jeden ,,\$'' -- ułamek w tekście $ \frac{1}{x} $.\\
+Oto równanie $c^{2} = a^{2}+b^{2}$\\
+
+Dwa dolary: ,,\$\$'' -- ułamek na środku: $$ \frac{1}{x} $$
+Równanie $$c^{2} = a^{2}+b^{2}$$
+
+Równania:
+Równanie z numeracją:
+\begin{equation}
+\frac{1}{x}
+\label{eq:rownanie1}
+\end{equation}
+
+Oto równanie:
+\begin{equation}
+c^{2}=a^{2}+b^{2}
+\label{eq:rownanie2}
+\end{equation}
+
+Bez numerowania, sam wzór:
+\begin{displaymath}
+	(a+b)\cdot c=ac+bc
+\end{displaymath}
+
+Zad. 1.\\
+Ułamek ma numer (\ref{eq:rownanie1}), równanie ma numer
+(\ref{eq:rownanie2}).
+
+Indeksy:
+Zad. 2.\\
+Indeks górny:
+$$ x^y \ e^{x} \ 2^{e} \ A^{2 \times 2} $$
+Indeks dolny:
+$$ x_y \ a_{ij} $$
+Przykłady:
+$$ \frac{2^k}{2^{k+2}} $$
+$$ 2^\frac{x^2}{(x+2)(x-2)^3}	$$
+$$ \vec{x} = [x_1,x_2, \dots x_N]	$$
+
+Operatory matematyczne:
+$$ \sum \ \sum_{i=1}^{10}x_{i} \ \prod \ \coprod \ \int \ \oint \ \bigcap \ \bigcup \
+	\bigsqcup \ \bigvee \ \bigwedge \ \bigodot \ \bigotimes \ \bigoplus \ \biguplus $$
+	
+,,Ozdobniki'' liter:\\
+$$ \hat{a} \ \check{b} \ \breve{c} \ \acute{d} \ \grave{e} \ \tilde{f} \ \bar{g} \ 
+	\vec{h} \ \dot{m} \ \ddot{n}$$
+	
+Strzałki, podkreślenia, klamry, pierwiastki:\\
+$$ \widetilde{aaa} \ \widehat{bbb} \ \overleftarrow{ccc} \ \overrightarrow{ddd} \
+	\overline{eee} \ \overbrace{fff} \ \underbrace{ggg} \ \underline{hhh} \
+	\sqrt{iii} \sqrt[n]{jjj} \ \frac{kkk}{}$$
+
+Symbole:\\
+$ \aleph \ \hbar \ \imath $ \dots 
+$ \flat \ \natural \ \sharp \ \| \clubsuit \ \S \ \vdots $ \dots 
+
+
+Formatowanie w trybie mat.: \\
+$$	\emph{Pochyle} \ \textbf{Grube}$$
+$$ \textsc{Tekst} \ \verb"Maszyna"	$$
+
+Jeszcze inne znaki:
+$ ( \ [ \ \{ \ \downarrow $
+$ < \ \geq \ \simeq \ \models \ \approx \ \times \ \circ \ \wedge \ \star$
+(i wiele innych\dots)
+
+Układ równań:
+$$54) e'_{ij}= 
+\left \{ 
+			\begin{array}{c}
+			e_{ij} \ {\rm gdy}\ d(x_i) \neq d(x_j) \\
+			a + b = c\\
+\end{array}
+\right. $$
+
+Algorytm:
+\begin{algorithmic}
+\State{Input data}
+\If{a + b = c}
+\item{b = c - a}
+\EndIf
+\end{algorithmic}
+
+\subsection{Przykłady wzorów}
+
+\begin{displaymath}
+(a_1=a_1(x)) \wedge (a_2=a_2(x)) \wedge \dots \wedge
+(a_k=a_k(x)) \Rightarrow (d=d(u))
+\end{displaymath}
+
+
+\end{document}
