@@ -107,5 +107,82 @@ Algorytm:
 (a_k=a_k(x)) \Rightarrow (d=d(u))
 \end{displaymath}
 
+\begin{displaymath}
+	[x]_A=\{y\in{}U:a(x)=a(y),\forall{}a\in{}A\}
+	\textrm{, where the central
+	object }x\in{}U
+\end{displaymath}
+
+\begin{displaymath}
+	g(u,r)=\{v\in{}U:\frac{card\{IND(u,v)\}}
+	{card\{A\}|}\geq{}r\}
+\end{displaymath}
+
+\begin{displaymath}
+	\textrm{where, }IND(u,v)=\{a\in{}A:a(u)=a(v)\}
+\end{displaymath}
+
+\begin{displaymath}
+	T:[0,1]\times[0,1]\rightarrow[0,1],
+\end{displaymath}
+
+\begin{displaymath}
+	x\Rightarrow_Ty\geq{}r\textrm{ if and only if }T(x,r)\leq{}y
+\end{displaymath}
+
+\begin{displaymath}
+	x\Rightarrow_Ty = max \{ r:T(x,r)\leq{}y \}
+\end{displaymath}
+
+\begin{displaymath}
+	\mu_T(x,y,r) \textrm{ if and only if } x\Rightarrow_T y \geq r
+\end{displaymath}
+
+\begin{displaymath}
+	dis_\varepsilon (u,v) = \frac{ | \{ a\in A: ||a(u) - a(v) || 
+	\geq \varepsilon \} | }
+	{ |A| }
+\end{displaymath}
+
+\begin{displaymath}
+	dis_\varepsilon (u,v) = \frac{ | \{ a\in A: ||a(u) - a(v) || 
+	< \varepsilon \} | }
+	{ |A| }
+\end{displaymath}
+
+\begin{displaymath}
+	Param(v_d) = \sum_{ \{ v\in U_{trn}:d(v)=v_d  \} } w(v,u,\varepsilon)
+\end{displaymath}
+
+\begin{displaymath}
+	Param(v_d) = \sum_{ \{ v_p\in U_{trn}:d(v_p)=v_d  \} } w(u_q, v_p),
+\end{displaymath}
+
+\begin{displaymath}
+	S^{c_i}(a)=\frac{ (\overline{C}^a_i - \hat{C}^a_i )^2 }
+	{ Z_{{\overline{C}^{a^2}_i} } + Z_{\hat{C}^{a^2}_i } }, a\in A.
+\end{displaymath}
+
+\begin{displaymath}
+	C^a_i= \{ a(u):u\in U \textrm{ and } d(u)=c_i\}.
+\end{displaymath}
+
+\begin{displaymath}
+	F_{c_i}(a)= \frac{MSTR_{c_i}(a)}{MSE_{c_i}(a)}
+\end{displaymath}
+
+\begin{displaymath}
+	MSTR_{C_i}(a) = card\{ C^a_i \} \ast ( \bar{C}^a_i - \hat{C}^a_i )^2
+\end{displaymath}
+
+\begin{displaymath}
+	A_{C_i}(a) = C^a_i \wedge_\varepsilon \{U\backslash C^a_i\}
+\end{displaymath}
+
+\begin{displaymath}
+	\frac{card\{ a(u) \in C^a_i: \frac{|a(u)-\hat{C}^a_i}{train_a}>
+		\varepsilon  \}}
+	{card\{ C^a_i \}}
+\end{displaymath}
 
 \end{document}
