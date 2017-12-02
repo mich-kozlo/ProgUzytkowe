@@ -2,6 +2,7 @@
 \usepackage[MeX]{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{algpseudocode}
+\usepackage{amsmath}
 
 %opening
 \title{Matematyka w LaTeX'u}
@@ -27,13 +28,13 @@ Równania:
 Równanie z numeracją:
 \begin{equation}
 \frac{1}{x}
-\label{eq:rownanie1}
+\label{rownanie1}
 \end{equation}
 
 Oto równanie:
 \begin{equation}
 c^{2}=a^{2}+b^{2}
-\label{eq:rownanie2}
+\label{rownanie2}
 \end{equation}
 
 Bez numerowania, sam wzór:
@@ -42,8 +43,8 @@ Bez numerowania, sam wzór:
 \end{displaymath}
 
 Zad. 1.\\
-Ułamek ma numer (\ref{eq:rownanie1}), równanie ma numer
-(\ref{eq:rownanie2}).
+Ułamek ma numer \eqref{rownanie1}, równanie ma numer
+\eqref{rownanie2}.
 
 Indeksy:
 Zad. 2.\\
@@ -68,6 +69,11 @@ Strzałki, podkreślenia, klamry, pierwiastki:\\
 $$ \widetilde{aaa} \ \widehat{bbb} \ \overleftarrow{ccc} \ \overrightarrow{ddd} \
 	\overline{eee} \ \overbrace{fff} \ \underbrace{ggg} \ \underline{hhh} \
 	\sqrt{iii} \sqrt[n]{jjj} \ \frac{kkk}{}$$
+
+Niektóre litery greckie: $ \Gamma \ \Delta \ \Pi \ \Phi \ \Omega \alpha \
+ \beta \ \gamma \ \delta \ \epsilon \ \varepsilon \ \lambda \ \mu \ \tau \ 
+\phi$
+
 
 Symbole:\\
 $ \aleph \ \hbar \ \imath $ \dots 
@@ -184,5 +190,32 @@ Algorytm:
 		\varepsilon  \}}
 	{card\{ C^a_i \}}
 \end{displaymath}
+
+$$ Balanced.acc = \frac{acc_{c_1} + acc_{c_2} + ... + acc_{c_k} } {k} $$ %bez \dots
+
+$$ Param(v_d) = \sum_{ \{ v\in U_trn : d(v) = v_d \} }{w(v,u,\varepsilon )} $$
+
+$$ Param(v_d) = \sum_{ \{ v_p\in U_trn : d(v_p) = v_d \} }{w(u_p,v_p)} $$
+
+$$ MSE_{c_i}(a) = \frac{ \sum^{card\{ C^a_i \} }_{j=1}{(a(u_j) - \hat{C}^a_i)^2 } }
+{card\{ C^a_i \} } , where u_j \in C^a_i, i=1,2,...,card\{ C^a_i \} $$
+
+$$ C^a_i = \{ a(u): u\in U and d(u) = c_i \}, \hat{C}^a_i = 
+	\frac{ \{ a(v): v\in U and d(v) \neq c_i \} }
+	{ card\{U\} = card\{ C^a_i \} } $$
+
+{ \scriptsize
+$$ C^a_i\wedge_\varepsilon \{ U\backslash C^a_i \} = \frac{ card\{ a(u) \in C^a_i:
+	\exists a(v) \in \{ U\backslash C^a_i \}; \frac{|a(u)-a(v)|}{train_a} \leq \varepsilon \} + card\{ a(v) \in \{ U\backslash C^a_i\}: \exists a(u) \in C^a_i; \frac{|a(u)-a(v)|}{train_a} \leq \varepsilon \} } { card\{ U \} } $$
+}
+
+{ \def \arraystretch{1.5}
+$$ c_{ij}=
+\left \{ 
+\begin{array}{c}
+	1, \textrm{ if } \frac{card\{ IND(u_i,u_j) \}}{card\{A\}} \geq r_{gran} \\
+	0, \textrm{ otherwise} \\
+\end{array} \right.
+ $$ }
 
 \end{document}
